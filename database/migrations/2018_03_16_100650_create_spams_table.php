@@ -19,7 +19,6 @@ class CreateSpamsTable extends Migration
             $table->string('sender_id');
             $table->string('reciever_id');
             $table->string('subject');
-            $table->string('body');
             $table->string('attachment_size');
             $table->string('attachment_format');
             $table->timestamps();
