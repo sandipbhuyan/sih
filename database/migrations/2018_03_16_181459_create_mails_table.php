@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSpamsTable extends Migration
+class CreateMailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,15 @@ class CreateSpamsTable extends Migration
      */
     public function up()
     {
-        Schema::create('spams', function (Blueprint $table) {
+        Schema::create('mails', function (Blueprint $table) {
             $table->increments('id');
             $table->string('time');
-            $table->string('sender_id');
-            $table->string('reciever_id');
+            $table->string('sender');
+            $table->string('reciever');
             $table->string('subject');
             $table->string('attachment_size');
             $table->string('attachment_format');
+            $table->string('type');
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ class CreateSpamsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('spams');
+        Schema::dropIfExists('mails');
     }
 }

@@ -132,11 +132,24 @@
                 <b class="arrow"></b>
             </li>
             <li class="">
-                <a href="{{ url('statistics') }}">
+                <a href="{{ route('mails') }}">
                     <i class="menu-icon fa fa-tachometer"></i>
-                    <span class="menu-text"> Statistics </span>
+                    <span class="menu-text"> Mail Analysis </span>
                 </a>
-
+                <b class="arrow"></b>
+            </li>
+            <li class="">
+                <a href="{{ route('users') }}">
+                    <i class="menu-icon fa fa-tachometer"></i>
+                    <span class="menu-text"> Users </span>
+                </a>
+                <b class="arrow"></b>
+            </li>
+            <li class="">
+                <a href="{{ route('visualization') }}">
+                    <i class="menu-icon fa fa-tachometer"></i>
+                    <span class="menu-text"> Visualization </span>
+                </a>
                 <b class="arrow"></b>
             </li>
         </ul><!-- /.nav-list -->
